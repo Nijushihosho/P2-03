@@ -1,0 +1,403 @@
+/** @param main. footer. background-color=#F2F2F2: /*voir syntaxe du css * 
+* ! même background-color gris pour les deux premières sections du main et footer  */
+ 
+/*TODO trouver le nom du sélecteur pour la balise des icons qui vont êtres color bleu #0065FC et background color #DEEBFF*
+/* TODO fichier de remise à zero du css...
+/**
+* * Methode * CSS rules to specify families font-family: 'Raleway', sans-serif 
+*/
+
+* margin: auto;
+
+:root {
+  --bleu: #0065FC;
+  --lightblue:#deebff;
+  --lightgris:#F2F2F2;  
+}
+
+body {
+    font-family: "Raleway"; sans-serif;
+}
+
+nav img {
+    height: 80px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul { 
+    display: flex ;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 10px 0 20px;
+}
+
+a :link {
+  text-decoration: none;
+}
+
+/*barre de navigation*/
+
+.topnav {
+  background-color: white;
+  overflow: hidden;
+}
+  
+.topnav a {
+  color: gray;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-top: 3px solid transparent;
+}
+
+/* todo */
+.topnav a:hover {
+border-top: 3px solid #0065FC;
+color: #0065FC;
+}
+
+.topnav a.active {
+border-top: 3px solid #0065FC;
+}
+
+
+nav li:last-child {
+    color: #0065FC;
+}
+
+/*header*/
+
+body ul {
+    display: flex ;
+    list-style: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.input-container {
+    display: -ms-flexbox; 
+    display: flex;
+    width: 20%;
+    margin-bottom: 25px;
+  }
+
+  /*icon de de localisation*/
+  .input-container .fas {
+    background-color: #F2F2F2;
+    color: black;
+    border-radius: 15px 0 0 15px;
+    min-width: 50px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+  
+  .input-field:focus {
+    border: 2px solid #F2F2F2;
+  }
+  
+  /* style du button rechercher */
+
+  /*Bouton rechercher */
+  .input-container .btn {
+    border-radius: 0 20px 20px 0;
+    color: white;
+    background-color: #0065FC;
+    padding: 10px 14px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+/*conteneur global filtres*/
+.barre-filtre {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 70%;
+    margin: 0 20px 20px 20px;
+  }
+  
+  .filtre {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    }
+  
+  .filtre i {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #0065FC;
+    font-size: 1rem;
+    background-color: #deebff;
+    /* *TODO vérifier couleur et calibrage moniteur*/ 
+    border-radius: 50%; 
+    width: 41px;
+    height: 45px;
+    }
+
+  /*.fas.fa-money-bill-wave-alt{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #0065FC;
+    background-color: var(--lightblue);
+    font-size: 1rem; 
+    width: 100%;
+    height: 45px;
+    border-radius: 50%;
+    }*/
+
+  .filtre span {
+    font-weight: bold;
+    }
+
+  .filtre:hover {
+    opacity: 1;
+    cursor: pointer;
+    background-color: turquoise;
+    }
+
+/*style icone information*/
+  .fa-info-circle {
+    color: white;
+    background-color: #0065FC;
+    border-radius: 50px;
+    margin-left: 15px;
+  }
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 25%;
+  margin-bottom: 25px;
+}
+ 
+    /*icons font awesome de barre de filtres */ 
+/*.input-container2 .fas{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1rem;
+  color: #0065FC;
+  background-color: var(--lightblu);
+  padding: 1rem;
+  border-radius: 50%;
+  width: fit-content;
+  height: 45px;
+  }*/ 
+
+
+  /* boutons de filtres */
+
+/*.barre-filtre.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 35px;
+  border: solid 2px;
+  border-color: #F2F2F2;
+  color: black;
+  background: white;
+  font-size: 18px;
+  cursor: pointer;
+  }/*
+
+
+
+/*main*/
+
+/*couleur de fond*/
+ 
+.background {
+  background-color: #F2F2F2;
+  border-radius: 20px;
+}
+
+.background2 {
+  background-color: white;
+}
+
+.flex-container {
+  display: flex;
+}
+
+/*conteneur Hébergements à Marseille*/
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#marseille {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.maincontainer1 {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 600px;
+  margin-right: 20px;
+  padding: 0 20px 0 20px;
+  border-radius: 20px;
+}
+
+.maincontainer1 .box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  width: fit-content;
+  height: 200px;
+  background-color: white;
+  color: black;
+  font-size: 12px;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 10px;
+  box-shadow: darkgrey;
+}
+
+
+.maincontainer1.titre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: space-around;
+}
+
+.maincontainer1.description {
+  display: flex;
+  justify-content: center;
+}
+
+.maincontainer1 i {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+
+.maincontainer1 .paragraphe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-around;
+}
+
+
+/*conteneur "Les plus populaires"*/
+
+.maincontainer2 {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 600px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+.maincontainer2 .box {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  width: 85%;
+  height: fit-content;
+  background-color: white;
+  font-size: 12px;
+  border-radius: 20px;
+  padding: 4px;
+  
+}
+
+.bleu {
+  color: #0065FC;
+}
+/* conteneur activités marseille */
+.maincontainer3 {
+display: flex 3;
+margin: 20px;
+justify-content: space-around;
+align-items: center;
+}
+
+.maincontainer3 .box {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: flex-end;
+}
+
+.maincontainer3 .titre {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin: 0;
+}
+
+/*style des images */
+
+.maincontainer1 img{
+width: 100%;
+height: 100px;
+object-fit: cover;
+background-size: cover;
+border-radius: 20px 20px 0px 0px;
+}
+
+.maincontainer2 img{
+  width: 25%;
+  height: 120px;
+  object-fit: cover;
+  object-position: left;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.maincontainer3 img{
+width: 100%;
+height: 120px;
+object-fit: cover;
+border-radius: 20px;
+box-shadow: black;
+}
+
+footer{
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color:#F2F2F2 ;
+}
+
+footer li {
+    list-style: none;
+}
+
